@@ -342,8 +342,22 @@ form.contact-form {
 }
 
 @media screen and (max-width:640px) {
+    #services h2.title {
+        width: 80%;
+    }
+    
     #portofolio {
         height: 100vh;
+    }
+
+    #portofolio .section-title {
+        margin: 50px auto 0;
+    }
+
+    #portofolio .container {
+        scale: .6;
+        display: grid;
+        gap: 100px 25px;
     }
 
     #services .container {
@@ -356,9 +370,16 @@ form.contact-form {
         margin-inline: auto;
     }
 
+    #contact {
+        padding: 50px 20px 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
     .contact-form input, 
     .contact-form textarea {
         width: 100%;
     }
-
 }
