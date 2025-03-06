@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    padding: 40px 80px;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+}
+
+header h2 {
+    color: #FFF0D1;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #FFF0D1;
+    transition: all .2s ease-out;
+    font-weight: 600;
+}
+
+.nav-list li a:hover {
+    color: #A67B5B;
+    border-bottom: 2px solid #FFF0D1;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #040D12 50%, #422f2e);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+
+#home .my-self {
+    color: #FFF0D1;
+    border-left: 1.5px solid #FDF7E4;
+    padding-left: 30px;
+
+}
+
+.my-self h3 {
+    font-size: 30px;
+}
+
+.my-self h2 {
+    font-size: 40px;
+}
+
+#home .image {
+    background-image: url(image/sapiens.svg);
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+#services {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 70px 0;
+    background-color: #FDF7E4;
+}
+
+#services h2 {
+    font-size: 40px;
+    margin: 50px;
+    text-align: center;
+}
+
+#services .container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#services .container .card {
+    width: 300px;
+    height: 300px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #040d124d;
+    transition: all .2s ease-out;
+    background-color: #fdfaef;
+}
+
+#services .container .card:hover {
+    transform: translate(4px, 4px);
+    scale: 1.02;
+    box-shadow: -2px -2px 8px rgba(37, 37, 37, 0.53);
+}
+
+#services .container .card h3,
+#services .container .card p {
+    text-align: center;
+    margin-top: 6px;
+}
+
+#services .container .card h3 {
+    font-size: 18px;
+}
+
+#services .container .card p {
+    font-size: 13px;
+}
+
+#portofolio {
+    width: 100%;
+    height: 100vh;
+    background-color: #fdfaef;
+    padding: 50px 70px 0;
+}
+
+#portofolio .section-title {
+    text-align: center;
+    font-size: 40px;
+    margin: 50px auto 80px;
+}
+
+#portofolio .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#portofolio .card {
+    width: 250px;
+    height: 240px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #040d124d;
+    transition: all .2s ease-out;
+}
+
+#portofolio .card:hover {
+    transform: translate(4px, 4px);
+    scale: 1.02;
+    box-shadow: -2px -2px 8px rgba(37, 37, 37, 0.53);
+}
+
+#portofolio .card h3 {
+    text-align: center;
+    margin-top: 4px;
+}
+
+#portofolio .card p {
+    text-align: center;
+    font-size: 14px;
+}
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 70px 0;
+}
+
+form.contact-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-form div {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 50%;
+    padding: 15px 25px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    border: 1px solid #040d124d;
+    border-radius: 8px;
+    resize: none;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #9d9fa1;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border: 1.5px solid #A67B5B;
+}
+
+.btn-submit {
+    width: 20%;
+    height: 40px;
+    padding: 8px 30px;
+    border-radius: 10px;
+    border: 2px solid #422f2e;
+    background-color: transparent;
+    color: #422f2e;
+    font-weight: 600;
+    transition: all .2s ease-out;
+}
+
+.btn-submit:hover {
+    background-color: #422f2e;
+    color: #f7f7f7;
+}
+
+/* Responsif */
+@media screen and (max-width:768px) {
+    .nav-icon {
+        display: block;
+        cursor: pointer;
+        color: #FDF7E4;
+        filter: drop-shadow(0 0 2px black);
+        font-size: 30px;
+        position: fixed;
+        top: 26px;
+        right: 30px;
+        z-index: 999;
+    }
+
+    header {
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        transform: translateX(400px);
+        right: 0;
+        transition: all .3s ease-out;
+    }
+    
+    header .logo {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        position: fixed;
+        top: 160px;
+        right: 35%;
+    }
+    
+    .nav-active {
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        transform: translateX(0);
+    }
+
+    #home {
+        display: flex;
+        flex-wrap: wrap;
+        padding-block: 50px;
+    }
+
+    #home .my-self h3 {
+        font-size: 24px;
+    }
+
+    #home .my-self h2 {
+        font-size: 23px;
+    }
+
+    #home .image {
+        order: -1;
+        width: 300px;
+        height: 300px;
+        margin-inline: auto;
+    }
+
+    #services {
+        height: fit-content;
+        padding-block: 50px;
+    }
+    
+    #portofolio {
+        height: fit-content;
+        padding-block: 50px;
+    }
+    
+    #services .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        scale: .8;
+        
+    }
+
+    #portofolio .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        scale: .9;
+    }
+
+    #contact {
+        height: fit-content;
+        padding-bottom: 100px;
+    }
+    
+    .contact-form input, 
+    .contact-form textarea {
+        width: 80%;
+        padding: 15px 25px;
+    }
+
+    .btn-submit {
+        width: 30%;
+        padding: 8px 0;
+    }
+}
+
+@media screen and (max-width:640px) {
+    #portofolio {
+        height: 100vh;
+    }
+
+    #services .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        scale: 1;
+    }
+
+    #services .card {
+        margin-inline: auto;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        width: 100%;
+    }
+
+}
